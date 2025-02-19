@@ -1,8 +1,5 @@
 from fastapi import FastAPI
+from api.endpoints import threat_intel
 
-app = FastAPI()
-
-
-@app.get('/')
-def main():
-    return {"Message": "Hello There!"}
+app = FastAPI(title="Threat Intelligence API")
+app.include_router(threat_intel.router)
