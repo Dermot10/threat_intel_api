@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from models.models import ThreatIntel
+from app.models.models import ThreatIntel
 from datetime import date
 
 
