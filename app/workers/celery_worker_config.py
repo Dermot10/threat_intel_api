@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-RABBITMQ_URL = os.getenv("RABBITMQ_URL", "amqp://guest:guest@localhost:5672//")
+RABBITMQ_URL = os.getenv("RABBITMQ_URL")
 
 # Celery Configuration
 celery_app = Celery(
