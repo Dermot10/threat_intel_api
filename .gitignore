@@ -3,3 +3,4 @@ db_notes.txt
 .env
 venv/
 .vscode/
+*__pycache__*
